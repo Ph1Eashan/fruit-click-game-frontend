@@ -1,38 +1,205 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  box-sizing: border-box;
+  font-family: "Sour Gummy", sans-serif;
+}
+
+.leftSide {
+  float: left;
+  background-image: url("https://media.tenor.com/ZgbW9V5PKoMAAAAM/banana-dance-dancing-banana.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  height: 100vh;
+  width: 50%;
+  background-color: yellow;
+}
+
+.rightSide {
+  float: right;
   text-align: center;
+  width: 50%;
+  padding-top: 55px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.leftSide h1 {
+  margin-top: 30px;
+  margin-left: 50px;
+  outline-color: yellow;
+  outline-width: 5px;
+  outline-style: solid;
+  width: fit-content;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: auto;
+  width: 60%;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 36px;
+}
+
+.rightSide input {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  background-color: yellow;
+  border: none;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.rightSide input:focus {
+  box-shadow: 5px 5px black;
+  border: none;
+}
+
+.rightSide button {
+  background-color: black;
   color: white;
+  width: 50%;
+  margin: auto;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+  font-family: "Sour Gummy", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.homePageContainer {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding-top: 20px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkZVEiqKSG9I8wv7ks-NuH5jZYRutS5Tj64aqh6MIADD6P987y9WDamT0&s=10");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clickCountButton {
+  border: none;
+  background-color: transparent;
+  margin-top: 20px;
+}
+
+.logoutButton {
+  background-color: yellow;
+  color: black;
+  font-size: 20px;
+  border: none;
+  font-family: "Sour Gummy", sans-serif;
+  padding: 20px 30px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.rankContainer {
+  width: 50%;
+  float: right;
+  text-align: center;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRAbYgez1ZP0lYr-5zhOMsqlLsZHW_SuyhT0TpO0mvGUG7epq3_U5Ln-M&s=10");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* padding-top: 20px; */
+}
+
+.rankContainer ul {
+  list-style: none;
+  margin-top: 50px;
+  line-height: 30px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-weight: 900;
+}
+
+.rankContainer h1 {
+  padding-top: 20px;
+  font-size: 45px;
+}
+
+.clickCountP {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.adminContainer {
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-size: 35px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkZVEiqKSG9I8wv7ks-NuH5jZYRutS5Tj64aqh6MIADD6P987y9WDamT0&s=10");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.adminContainer input {
+  border: none;
+  border-radius: 20px;
+  background-color: yellow;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.adminContainer button {
+  width: 50%;
+  margin: 30px auto auto auto;
+  background-color: black;
+  font-size: 30px;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.playersPanel {
+  width: 50%;
+  float: right;
+  text-align: center;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRAbYgez1ZP0lYr-5zhOMsqlLsZHW_SuyhT0TpO0mvGUG7epq3_U5Ln-M&s=10");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.playersPanel ul {
+  list-style: none;
+  margin-top: 50px;
+  line-height: 30px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  font-weight: 900;
+}
+
+.playersPanel .logoutButton {
+  margin-left: 80%;
+}
+
+.crudButtons button {
+  margin: 10px 10px 10px 10px;
+  background-color: black;
+  font-size: 20px;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
 }
